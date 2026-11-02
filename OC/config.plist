@@ -24,6 +24,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-Disable_Network_RP08.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-Disable_Network_RP08.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-EC.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -278,10 +286,10 @@
 				<key>acpi-wake-type</key>
 				<integer>1</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>disable-gpu</key>
-				<true/>
+				<key>layout-id</key>
+				<integer>99</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -331,17 +339,17 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportRTW.kext</string>
+				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Experimental RTL8852BE Wi-Fi support</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportRTW</string>
+				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
-				<string>25.99.99</string>
+				<string></string>
 				<key>MinKernel</key>
-				<string>25.0.0</string>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1161,7 +1169,7 @@
 				AAAAAAAAAAAAAAAAAAA=
 				</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -vi2c-force-polling ctrsmt=full revpatch=sbvmm nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80 ipc_control_port_options=0 gfxrst=4</string>
+				<string>-v debug=0x100 keepsyms=1 -vi2c-force-polling ctrsmt=full nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80 ipc_control_port_options=0 gfxrst=4</string>
 				<key>csr-active-config</key>
 				<data>
 				QwoAAA==
@@ -1237,14 +1245,14 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02131600CDP8PGJC</string>
+			<string>REDACTED</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>3841</integer>
 			<key>ROM</key>
 			<data>
-			YP/KhrCf
+			REDACTED
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
@@ -1253,9 +1261,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02G50SGML7H</string>
+			<string>REDACTED</string>
 			<key>SystemUUID</key>
-			<string>8E62C893-CD60-4C6C-8A09-F4DFB384EDBD</string>
+			<string>REDACTED</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1273,7 +1281,7 @@
 		<key>APFS</key>
 		<dict>
 			<key>EnableJumpstart</key>
-			<false/>
+			<true/>
 			<key>GlobalConnect</key>
 			<false/>
 			<key>HideVerbose</key>
@@ -1351,21 +1359,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>HideVerbose</key>
-				<true/>
-				<key>LoadEarly</key>
 				<false/>
-				<key>Path</key>
-				<string>apfs_aligned.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>HideVerbose</key>
-				<true/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
@@ -1379,7 +1373,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>HideVerbose</key>
-				<true/>
+				<false/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
@@ -1393,7 +1387,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>HideVerbose</key>
-				<true/>
+				<false/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
