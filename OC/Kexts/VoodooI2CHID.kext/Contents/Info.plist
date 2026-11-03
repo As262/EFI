@@ -81,13 +81,14 @@
 			<string>com.alexandred.VoodooI2CHID</string>
 			<key>IOClass</key>
 			<string>VoodooI2CHIDDevice</string>
-			<key>IOProbeScore</key>
-			<integer>100</integer>
-			<key>IOPropertyMatch</key>
-			<dict>
-				<key>compatible</key>
+			<key>IONameMatch</key>
+			<array>
+				<string>TPAD</string>
+				<string>ELAN06FA</string>
 				<string>PNP0C50</string>
-			</dict>
+			</array>
+			<key>IOProbeScore</key>
+			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CDeviceNub</string>
 		</dict>
@@ -352,6 +353,39 @@
 			<integer>400</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
+		</dict>
+		<key>VoodooI2CHIDDeviceByProperty</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.alexandred.VoodooI2CHID</string>
+			<key>IOClass</key>
+			<string>VoodooI2CHIDDevice</string>
+			<key>IOProbeScore</key>
+			<integer>9999</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>IOName</key>
+				<string>ELAN06FA</string>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CDeviceNub</string>
+		</dict>
+		<key>VoodooI2CHIDELANDevice</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.alexandred.VoodooI2CHID</string>
+			<key>IOClass</key>
+			<string>VoodooI2CHIDDevice</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>TPAD</string>
+				<string>ELAN06FA</string>
+				<string>PNP0C50</string>
+			</array>
+			<key>IOProbeScore</key>
+			<integer>9999</integer>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CDeviceNub</string>
 		</dict>
 		<key>VoodooI2CHIDSYNA3602Device</key>
 		<dict>
