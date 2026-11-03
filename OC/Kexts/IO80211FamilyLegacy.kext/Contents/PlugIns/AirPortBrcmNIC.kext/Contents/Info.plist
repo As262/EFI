@@ -3,100 +3,99 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>24G830</string>
+	<string>22A380010</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>AirportRTW</string>
+	<string>AirPortBrcmNIC</string>
+	<key>CFBundleGetInfoString</key>
+	<string>14.0, Copyright © 2006-2014 Apple Inc. All rights reserved.</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.senmiko.AirportRTW</string>
+	<string>com.apple.driver.AirPort.BrcmNIC</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AirportRTW</string>
+	<string>AirPortBrcmNIC</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.4.0</string>
+	<string>14.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.4.0</string>
+	<string>1400.1.1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>24F74</string>
+	<string>22G5038a</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>15.5</string>
+	<string>13.5</string>
 	<key>DTSDKBuild</key>
-	<string>24F74</string>
+	<string>22G5038a</string>
 	<key>DTSDKName</key>
-	<string>macosx15.5</string>
+	<string>macosx13.5.internal</string>
 	<key>DTXcode</key>
-	<string>1640</string>
+	<string>1430</string>
 	<key>DTXcodeBuild</key>
-	<string>16F6</string>
+	<string>14E6097d</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>AirportRTW</key>
+		<key>Broadcom 802.11 PCI</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.senmiko.AirportRTW</string>
+			<string>com.apple.driver.AirPort.BrcmNIC</string>
 			<key>IOClass</key>
-			<string>IOPCIEDeviceWrapper</string>
-			<key>IOPCIMatch</key>
-			<string>0x885210ec 0xa85a10ec 0xb85210ec 0xb85b10ec 0xb85110ec 0xb52010ec 0xc85210ec 0x892210ec 0x892b10ec 0xc82210ec 0xc82f10ec 0xb82210ec 0xc82110ec 0xb82110ec 0xd72310ec 0x881310ec</string>
+			<string>AirPort_BrcmNIC</string>
+			<key>IOMatchCategory</key>
+			<string>IODefaultMatchCategory</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>pci14e4,43ba</string>
+				<string>pci14e4,43a3</string>
+				<string>pci14e4,43a0</string>
+			</array>
 			<key>IOProbeScore</key>
-			<integer>70000</integer>
+			<integer>1400</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
-		</dict>
-		<key>NetworkController</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.senmiko.AirportRTW</string>
-			<key>IOClass</key>
-			<string>AirportRTW</string>
-			<key>IOMatchCategory</key>
-			<string>WiFiDriver</string>
-			<key>IONetworkRootType</key>
-			<string>airport</string>
-			<key>IOProbeScore</key>
-			<integer>70000</integer>
-			<key>IOProviderClass</key>
-			<string>IOPCIEDeviceWrapper</string>
-			<key>IOResourceMatch</key>
-			<string>IOBSD</string>
+			<key>TruePowerOff</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>26.0</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2026 laobamac. Based on AirportRTW by OpenIntelWireless.</string>
+	<string>13.5</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.driver.corecapture</key>
 		<string>1.0.0</string>
-		<key>com.apple.iokit.IO80211Family</key>
-		<string>1.5.0</string>
+		<key>com.apple.driver.mDNSOffloadUserClient</key>
+		<string>1.0.0d7</string>
+		<key>com.apple.iokit.IO80211FamilyLegacy</key>
+		<string>600.0</string>
 		<key>com.apple.iokit.IONetworkingFamily</key>
-		<string>3.2</string>
+		<string>3.1</string>
 		<key>com.apple.iokit.IOPCIFamily</key>
-		<string>2.9</string>
+		<string>2.8</string>
 		<key>com.apple.iokit.IOSkywalkFamily</key>
 		<string>1.0</string>
 		<key>com.apple.kpi.bsd</key>
-		<string>16.7</string>
+		<string>13.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>16.7</string>
+		<string>13.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>16.7</string>
+		<string>13.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>16.7</string>
+		<string>13.0.0</string>
+		<key>com.apple.kpi.private</key>
+		<string>14.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>13.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Network-Root</string>
